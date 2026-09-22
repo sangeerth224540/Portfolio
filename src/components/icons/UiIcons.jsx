@@ -48,6 +48,25 @@ export function ArrowUpRightIcon({ size = "1em", ...props }) {
   )
 }
 
+export function ArrowRightIcon({ size = "1em", ...props }) {
+  return (
+    <svg viewBox="0 0 24 24" width={size} height={size} {...base} {...props}>
+      <line x1="4" y1="12" x2="19" y2="12" />
+      <polyline points="13 6 19 12 13 18" />
+    </svg>
+  )
+}
+
+export function DownloadIcon({ size = "1em", ...props }) {
+  return (
+    <svg viewBox="0 0 24 24" width={size} height={size} {...base} {...props}>
+      <path d="M12 3v12" />
+      <polyline points="7 10 12 15 17 10" />
+      <path d="M4 18v1.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V18" />
+    </svg>
+  )
+}
+
 export function MailIcon({ size = "1em", ...props }) {
   return (
     <svg viewBox="0 0 24 24" width={size} height={size} {...base} {...props}>

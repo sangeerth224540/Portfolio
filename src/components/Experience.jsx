@@ -27,7 +27,7 @@ const roles = [
 
 export default function Experience() {
   return (
-    <section id="reel" className="relative py-28 px-6 sm:px-8">
+    <section id="reel" className="relative scroll-mt-20 py-28 px-6 sm:px-8">
       <div className="max-w-4xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 12 }}

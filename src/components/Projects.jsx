@@ -29,7 +29,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="work" className="relative py-28 px-6 sm:px-8 bg-surface/40">
+    <section id="work" className="relative scroll-mt-20 py-28 px-6 sm:px-8 bg-surface/40">
       <div className="max-w-5xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 12 }}

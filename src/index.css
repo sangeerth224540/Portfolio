@@ -22,6 +22,10 @@
   html {
     scroll-behavior: smooth;
   }
+  html.custom-cursor-active,
+  html.custom-cursor-active * {
+    cursor: none !important;
+  }
   body {
     background-color: var(--color-void);
     color: var(--color-ivory);

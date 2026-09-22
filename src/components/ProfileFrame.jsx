@@ -7,7 +7,7 @@ const Bracket = ({ className }) => (
   </svg>
 )
 
-export default function ProfileFrame({ src = '/profile.jpeg', name = 'Sangeerth C' }) {
+export default function ProfileFrame({ src = '/profile.png', name = 'Sangeerth C' }) {
   const [failed, setFailed] = useState(false)
   const initials = name
     .split(' ')
@@ -28,7 +28,7 @@ export default function ProfileFrame({ src = '/profile.jpeg', name = 'Sangeerth 
             src={src}
             alt={name}
             onError={() => setFailed(true)}
-            className="w-full h-full object-cover grayscale-[15%] contrast-[1.05]"
+            className="w-full h-full object-cover grayscale-[15%] contrast-[1.05] brightness-75"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-gradient-to-b from-surface-2 to-void">

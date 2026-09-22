@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion'
 import { GitHubDark, LinkedIn } from '@ridemountainpig/svgl-react'
 import { MailIcon, PhoneIcon } from './icons/UiIcons'
+import Magnetic from './Magnetic'
 import Aperture from './Aperture'
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-32 px-6 sm:px-8 overflow-hidden">
+    <section id="contact" className="relative scroll-mt-20 py-32 px-6 sm:px-8 overflow-hidden">
       <div className="absolute left-1/2 -translate-x-1/2 -bottom-40 opacity-40 pointer-events-none">
         <Aperture size={480} spin={false} />
       </div>
@@ -51,16 +52,37 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="flex items-center gap-5 mt-6">
-            <a href="#" className="p-2.5 rounded-full border border-stone-dim/30 hover:border-brass text-stone transition-colors duration-300" aria-label="LinkedIn">
-              <span className="block w-[18px] h-[18px]"><LinkedIn /></span>
-            </a>
-            <a href="#" className="p-2.5 rounded-full border border-stone-dim/30 hover:border-brass text-stone transition-colors duration-300" aria-label="GitHub">
-              <span className="block w-[18px] h-[18px]"><GitHubDark /></span>
-            </a>
-            <a href="mailto:sangeerthprasadc@gmail.com" className="p-2.5 rounded-full border border-stone-dim/30 hover:border-brass hover:text-brass text-stone transition-colors duration-300" aria-label="Email">
-              <MailIcon size={18} />
-            </a>
+          <div className="flex items-center gap-4 mt-6">
+            <Magnetic strength={14}>
+              <a
+                href="#"
+                className="flex items-center justify-center w-11 h-11 rounded-full border border-stone-dim/30 hover:border-brass overflow-hidden transition-colors duration-300"
+                aria-label="LinkedIn"
+                data-cursor="magnetic"
+              >
+                <span className="block w-5 h-5 shrink-0"><LinkedIn /></span>
+              </a>
+            </Magnetic>
+            <Magnetic strength={14}>
+              <a
+                href="#"
+                className="flex items-center justify-center w-11 h-11 rounded-full border border-stone-dim/30 hover:border-brass overflow-hidden transition-colors duration-300"
+                aria-label="GitHub"
+                data-cursor="magnetic"
+              >
+                <span className="block w-5 h-5 shrink-0"><GitHubDark /></span>
+              </a>
+            </Magnetic>
+            <Magnetic strength={14}>
+              <a
+                href="mailto:sangeerthprasadc@gmail.com"
+                className="flex items-center justify-center w-11 h-11 rounded-full border border-stone-dim/30 hover:border-brass hover:text-brass text-stone transition-colors duration-300"
+                aria-label="Email"
+                data-cursor="magnetic"
+              >
+                <MailIcon size={18} />
+              </a>
+            </Magnetic>
           </div>
         </motion.div>
       </div>
