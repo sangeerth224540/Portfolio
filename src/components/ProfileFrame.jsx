@@ -7,7 +7,7 @@ const Bracket = ({ className }) => (
   </svg>
 )
 
-export default function ProfileFrame({ src = '/profile.png', name = 'Sangeerth C' }) {
+export default function ProfileFrame({ src = '/sangeerth.jpeg', name = 'Sangeerth C' }) {
   const [failed, setFailed] = useState(false)
   const initials = name
     .split(' ')

@@ -5,7 +5,7 @@ import Magnetic from './Magnetic'
 
 const stats = [
   { value: '1.5+', label: 'Years experience' },
-  { value: '2', label: 'Projects shipped' },
+  { value: '4', label: 'Projects shipped' },
   { value: '8+', label: 'Frameworks & tools' },
   { value: '88%', label: 'Peak model accuracy' },
 ]
@@ -34,7 +34,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-6xl mx-auto w-full">
         <div className="grid lg:grid-cols-[1.15fr_1fr] gap-12 lg:gap-10 items-center">
-          {/* text column — shown second on mobile, first on desktop */}
+          {/* text column */}
           <div className="order-2 lg:order-1">
             <motion.p
               initial={{ opacity: 0, y: 8 }}
@@ -113,8 +113,8 @@ export default function Hero() {
             </motion.dl>
           </div>
 
-          {/* portrait column — shown first on mobile, second on desktop */}
-          <div className="order-1 lg:order-2">
+          {/* portrait column — hidden on mobile/small screens, shown on md and above */}
+          <div className="hidden md:block order-1 lg:order-2">
             <HeroPortrait />
           </div>
         </div>
